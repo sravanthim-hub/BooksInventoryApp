@@ -1,0 +1,21 @@
+1. Good to have an option to cancel / goback to Book list page from add book page either by
+   - having cancel button next to add book which takes user back to Book List page
+   - having link to home page at the top left
+   This helps if user changes mind and wishes to go back instead of clicking on browser back button
+
+2. Same as above for Edit Book Details page
+
+3. Genre is free text field in edit page and accepts any data where as it's a dropdown with selected data in add book page, 
+   this needs to be consistent otherwise bad data can be added using edit functionality
+
+4. Better to have confirmation page/dialogue for delete functionality as the book can be deleted with a smiple 1 click currently
+
+5. Next and Previous buttons can be rendered programatically meaning
+   - show next button only if there are more pages to navigate
+   - show previous button only if user is not on 1st page
+   
+6. logout is not working as expected
+  - clicking on logout button doesn't take user back to login page
+  - instead user stays on book list page with logout button and welcome message disappeared
+
+  https://frontendui-librarysystem.onrender.com/login

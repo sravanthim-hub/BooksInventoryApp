@@ -1,0 +1,45 @@
+{
+  "name": "booksinventoryapp",
+  "version": "1.0.0",
+  "description": "This is the test framework for writing automation tests for Books Inventory App",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "test": "npx playwright test",
+    "test-ui": "npx playwright test --ui",
+    "test-chrome": "npx playwright test --project=chromium",
+    "test-firefox": "npx playwright test --project=firefox",
+    "test-safari": "npx playwright test --project=webkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sravanthim-hub/BooksInventoryApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sravanthim-hub/BooksInventoryApp/issues"
+  },
+  "homepage": "https://github.com/sravanthim-hub/BooksInventoryApp#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.3",
+    "eslint": "^9.39.3",
+    "globals": "^17.4.0",
+    "typescript-eslint": "^8.56.1"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "@faker-js/faker": "^9.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "@xray-app/playwright-junit-reporter": "^0.10.0",
+    "axe-core": "^4.11.1",
+    "dotenv": "^17.3.1",
+    "eslint-plugin-playwright": "^2.9.0",
+    "faker": "^6.6.6",
+    "jiti": "^2.6.1"
+  }
+}
