@@ -1,0 +1,23 @@
+1. logout is not working as expected
+  - clicking on logout button doesn't take user back to login page
+  - instead user stays on book list page with logout button and welcome message disappeared
+
+2. Good to have an option to cancel / goback to Book list page from add book page either by
+   - having cancel button next to add book which takes user back to Book List page
+   - having link to home page at the top left
+   This helps if user changes mind and wishes to go back instead of clicking on browser back button
+
+3. Same as above for Edit Book Details page
+
+4. Genre is free text field in edit page and accepts any data where as it's a dropdown with selected data in add book page, 
+   this needs to be consistent otherwise bad data can be added using edit functionality
+
+5. Better to have confirmation page/dialogue for delete functionality as the book can be deleted with a smiple 1 click currently
+
+6. Next and Previous buttons can be rendered programatically meaning
+   - show next button only if there are more pages to navigate
+   - show previous button only if user is not on 1st page
+
+7. Based on the target users, it would be good practice to implement locking mechanism for performing operations on books to prevent more than one user actioning on the same book
+
+8. Would be good to implement session expiry so user can be logged out automatically if they are idle for certain time
