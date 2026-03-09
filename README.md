@@ -54,7 +54,7 @@ Core technologies used in this framework:
 
 ### Running tests
 
-- ** create .env file with the fields from .env.example and change the values to actual values related to the test before running the tests **
+- create `.env` file with the fields from `.env.example` and change the values to actual values related to the test before running the tests
 
 - Run full test suite `npm run test`
 - Run the tests in UI/debug mode `npm run test-ui`
@@ -64,9 +64,21 @@ Core technologies used in this framework:
 - Run test on firefox browser `npm run test-firefox`
 - Run test on webkit/safari `npm run test-safari`
 
+### Accessibility Testing
+
+- Accessibility checks are implemented using axe-core integrated with Playwright.
+- These checks are currently implemented with WCAG2AA standards, this can be updated based on the requirement
+
 ### Linting
 
+Linting is implemented using ESLint and rules include safegaurds such as preventing committed focused tests(`test.only`), recommended to run lint checks before pushing the code.
+
 - Run linting checks with the following command `npm run lint`
+
+### Test Reoorts
+
+- After execution, playwright html report will be generated in `playwright-report`. Open the report with `npx playwright show-report`
+- Update the report options in `playwright.config.ts` to generate Junit report if integrating with Xray. see `playwright.config.ts` for more details.
 
 ### Xray Integration
 
